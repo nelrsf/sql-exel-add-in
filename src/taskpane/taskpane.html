@@ -1,0 +1,53 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CDE</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <img width="150" src="C:/Users/usuario/Pictures/Imagen de WhatsApp 2024-06-07 a las 21.48.42_e68d0866.jpg" alt="Contoso" title="Contoso" />
+        <h6 class="ms-font-xl">Funciones de apoyo</h6>
+    </header>
+    <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Buscar material por código SAP</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <!-- <h2 class="ms-font-xl"> Discover what Office Add-ins can do for you today! </h2> -->
+        <input type="text" id="desc_input" class="search-code">
+        <div role="button" id="run" class="ms-Button ms-Button--hero ms-font-xl">
+            <span class="ms-Button-label">Buscar</span>
+        </div>
+        <p><label id="item-subject"></label></p>
+        <ul class="ms-List ms-welcome__features">
+            <li class="ms-ListItem">
+                <span class="ms-font-m">Achieve more with Office integration</span>
+            </li>
+            <li class="ms-ListItem">
+                <span class="ms-font-m">Unlock features and functionality</span>
+            </li>
+            <li class="ms-ListItem">
+                <span class="ms-font-m">Create and visualize like a pro</span>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
