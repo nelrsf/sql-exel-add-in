@@ -31,6 +31,9 @@ module.exports = async (env, options) => {
     },
     resolve: {
       extensions: [".ts", ".html", ".js"],
+      alias: {
+        'react-native-sqlite-storage': false
+      }
     },
     module: {
       rules: [
